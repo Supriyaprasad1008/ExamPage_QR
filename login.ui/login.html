@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Exam Login</title>
-
-    <!-- CSS connection -->
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
@@ -13,38 +11,18 @@
     <h2>Exam Login</h2>
     <p class="subtitle">Stay calm. Log in. Do your best.</p>
 
-    <!-- FORM (JS CONNECTED) -->
-    <form id="examForm" action="submit.php" method="POST">
+    <form action="../server/submit.php" method="POST">
 
-        <input 
-            type="text" 
-            id="name" 
-            name="name" 
-            placeholder="Name">
+        <input type="text" name="name" placeholder="Name" required>
 
-        <input 
-            type="text" 
-            id="collegeId" 
-            name="college_id" 
-            placeholder="College ID">
+        <input type="text" name="college_id" placeholder="College ID" required>
 
-        <input 
-            type="text" 
-            id="stream" 
-            name="stream" 
-            placeholder="Stream">
-
-        <!-- Error / Success message -->
-        <p id="errorMessage"></p>
+        <input type="text" name="stream" placeholder="Stream" required>
 
         <button type="submit" class="btn">Submit</button>
 
     </form>
-
 </div>
-
-<!-- JavaScript connection (must be at end) -->
-<script src="script.js"></script>
 
 </body>
 </html>
